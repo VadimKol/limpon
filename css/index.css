@@ -14,10 +14,55 @@ a {
     letter-spacing: 2.4px;
     text-transform: uppercase;
     color: #6e7ea9;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
-.btn-free {
+.btns-overview a + a {
+    margin-left: 16px;
+}
+.btn-primary {
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
     color: #fff;
     background-color: #1085e4;
+    border-radius: 30px;
+    border: 2px solid #1085e4;
+    padding: 20px 39px;
+}
+.btn-free {
+    padding: 20px 49px;
+}
+.btn-submit {
+    font-size: 14px;
+    letter-spacing: 2.8px;
+    border-radius: 25px;
+    padding: 15px 43px;
+}
+.btn-submit, .page-form .btn-primary {
+    cursor: pointer;
+}
+.btn-stat2 {
+    padding: 20px 62px;
+}
+.plans .btn-primary {
+    padding: 20px 61px;
+}
+.btn-plan {
+    background-color: transparent;
+    color: #8085b1;
+    border: 2px solid rgba(0,0,0,0.1);
+}
+.btn-primary:hover, .btn-primary:focus {
+    color: #1085e4;
+    background-color: #fff;
+}
+.btn-plan:hover, .btn-plan:focus {
+    background-color: #fff;
+    border: 2px solid #000;
+    color: #8085b1;
 }
 h1 {
     font-size: 80px;
@@ -26,14 +71,6 @@ h1 {
     letter-spacing: -2.4px;
     text-transform: capitalize;
     color: #192b59;
-}
-.btns-overview a {
-    font-weight: 700;
-    font-size: 12px;
-    letter-spacing: 2.4px;
-    text-transform: uppercase;
-    color: #fff;
-    background-color: #1085e4;
 }
 .grid h2 {
     font-weight: 700;
