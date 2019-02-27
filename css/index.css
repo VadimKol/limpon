@@ -3,7 +3,11 @@ body {
     /*font-family: 'Poppins', sans-serif;*/
     color: #7581a1;
     font-size: 16px;
-    line-height: 26px;
+    line-height: 1.625;
+}
+.wrapper {
+    max-width: 1109px;
+    margin: 0 auto;
 }
 a {
     text-decoration: none;
@@ -13,24 +17,32 @@ a {
     font-weight: 700;
     letter-spacing: 2.4px;
     text-transform: uppercase;
-    color: #6e7ea9;
     list-style-type: none;
-    padding: 0;
+    padding: 70px 0 0;
     margin: 0;
+    display: flex;
+    justify-content: space-between;
 }
+.nav-item {
+    color: #6e7ea9;
+}
+/*Button's*/
+/* .btns-overview {
+    text-indent: 5px;
+} */
 .btns-overview a + a {
     margin-left: 16px;
 }
 .btn-primary {
-    font-weight: 700;
     font-size: 12px;
+    font-weight: 700;
     letter-spacing: 2.4px;
     text-transform: uppercase;
     color: #fff;
     background-color: #1085e4;
     border-radius: 30px;
     border: 2px solid #1085e4;
-    padding: 20px 39px;
+    padding: 19px 39px;
 }
 .btn-free {
     padding: 20px 49px;
@@ -48,6 +60,8 @@ a {
     padding: 20px 62px;
 }
 .plans .btn-primary {
+    /* position: relative;
+    left: 4px; */
     padding: 20px 61px;
 }
 .btn-plan {
@@ -64,28 +78,104 @@ a {
     border: 2px solid #000;
     color: #8085b1;
 }
+/*h1+h2*/
+h1, 
+.header40, 
+.header50 {
+    font-weight: 600;
+    color: #192b59;
+}
 h1 {
     font-size: 80px;
-    line-height: 90px;
-    font-weight: 600;
+    line-height: 1.125;
     letter-spacing: -2.4px;
+    max-width: 540px;
     text-transform: capitalize;
-    color: #192b59;
+    margin-bottom: 64px;
 }
-.grid h2 {
-    font-weight: 700;
+.header40 {
     font-size: 40px;
-    line-height: 50px;
+    line-height: 1.25;
     letter-spacing: -1.2px;
-    color: #192b59;
+    max-width: 258px;
 }
-.grid h2 span {
+.header50 {
+    font-size: 50px;
+    line-height: 1.2;
+    letter-spacing: -1.5px;
+    max-width: 540px;
+    white-space: pre-wrap;
+}
+.page-stats .header50,
+.page-plans .header40,
+.page-team .header40,
+.page-details .header40 {
+    text-align: center;
+    margin: 0 auto;
+}
+.page-grid .header40 {
+    font-weight: 700;
+}
+.page-subscribe .header50,
+.page-testimonials .header40,
+.page-team .header40 {
+    color: #fff;
+}
+.page-stats .header50 {
+    max-width: 402px;
+    margin-bottom: 60px;
+}
+.page-app .header50 {
+    max-width: 456px;
+}
+.page-details .header40 {
+    max-width: 432px;
+    margin-bottom: 69px;
+}
+.page-testimonials .header40 {
+    max-width: 331px;
+}
+.page-plans .header40 {
+    margin-bottom: 81px;
+}
+.subheader {
     display: block;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 800;
-    letter-spacing: 2.8px;
+    letter-spacing: 3.6px;
+    text-transform: uppercase;
+    /* text-indent: 2px; */
     color: #1085e4;
+    margin-bottom: 14px;
 }
+.page-grid .subheader,
+.page-subscribe .subheader {
+    font-size: 14px;
+    letter-spacing: 2.8px;
+}
+.page-subscribe .subheader {
+    color: #00bffe;
+}
+.page-stats .subheader {
+    font-size: 16px;
+    letter-spacing: 3.2px;
+}
+.page-testimonials .subheader,
+.page-team .subheader {
+    color: #85c8ff;
+}
+.page-details .subheader {
+    margin-bottom: 17px;
+}
+.page-subscribe .subheader,
+.page-plans .subheader,
+.page-team .subheader {
+    margin-bottom: 18px;
+}
+.page-testimonials .subheader {
+    margin-bottom: 19px;
+}
+/*Grid+flex boxes*/
 .grid-item h3 {
     font-weight: 600;
     font-size: 20px;
@@ -97,3 +187,120 @@ h1 {
     font-weight: 600;
     color: #1085e4;
 }
+.list-stats {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1085e4;
+}
+.list-stats li span {
+    display: block;
+    font-size: 60px;
+    letter-spacing: -1.8px;
+    line-height: 1;
+    color: #bacbdc;
+    margin-bottom: 9px;
+}
+.plans {
+    display: flex;
+    justify-content: space-between;
+}
+.plans-item h3 {
+    font-size: 70px;
+    font-weight: 700;
+    letter-spacing: -2.1px;
+    line-height: 1;
+    text-align: center;
+    margin: 0 0 15px;
+    color: #000958;
+}
+.plans-item h3 span {
+    font-size: 20px;
+    letter-spacing: -0.6px;
+}
+.plans-item h3 span:last-child {
+    color: #7b8ab2;
+}
+.plans-item p {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    text-align: center;
+    /* text-indent: 7px; */
+    color: #0084ff;
+    margin: 0 0 39px;
+}
+.plans-bonuses {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 63px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    /* text-indent: 5px; */
+    color: #8085b1;
+}
+.plans-bonuses li {
+    margin-bottom: 18px;
+}
+.plans-bonuses li:last-child {
+    margin-bottom: 0;
+}
+.active-plan h3, .active-plan p, .active-plan .plans-bonuses {
+    color: #fff;
+}
+.Screen {
+   /*  display: block;
+    margin: 0 auto; */
+    vertical-align: bottom; /*comment*/
+}
+/*Background's and Pages*/
+.page-subscribe {
+    background-image: linear-gradient(120deg, rgb(10,32,144) 0%, rgb(35,119,205) 100%);
+}
+.page-stats {
+    padding: 117px 0 114px;
+    background-image: url(../img/info_background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.blue-bg {
+    background-color: #1085e4;
+    border-top-right-radius: 400px;
+}
+.page-team {
+    background-image: url(../img/team/team_background.png);
+    background-repeat: no-repeat;
+}
+.page-details {
+    padding-top: 117px;
+    text-align: center; /*comment .Screen*/
+    background-color: #edf6ff;
+}
+.page-plans {
+    padding-bottom: 120px;
+}
+.plans-item {
+    width: 100%;
+    max-width: 350px;
+    padding: 68px 0 98px;
+    text-align: center;
+    background-image: url(../img/plans_background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.active-plan {
+    background-color: #192b59;
+    background-image: none;
+}
+  
