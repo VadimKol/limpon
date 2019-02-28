@@ -74,9 +74,9 @@ a {
     background-color: #fff;
 }
 .btn-plan:hover, .btn-plan:focus {
-    background-color: #fff;
-    border: 2px solid #000;
-    color: #8085b1;
+    background-color: #8085b1;
+    border: 2px solid #8085b1;
+    color: #fff;
 }
 /*h1+h2*/
 h1, 
