@@ -298,7 +298,7 @@ h1 {
     text-align: center;
     background-image: url(../img/plans_background.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: right;
     background-size: cover;
 }
 .active-plan {
