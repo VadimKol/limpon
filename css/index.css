@@ -73,6 +73,9 @@ a {
     color: #1085e4;
     background-color: #fff;
 }
+.active-plan .btn-primary:hover, .active-plan .btn-primary:focus {
+    background-color: transparent;
+}
 .btn-plan:hover, .btn-plan:focus {
     background-color: #8085b1;
     border: 2px solid #8085b1;
@@ -290,8 +293,7 @@ h1 {
     padding-bottom: 120px;
 }
 .plans-item {
-    width: 100%;
-    max-width: 350px;
+    flex-basis: 31.5599%;
     padding: 68px 0 98px;
     text-align: center;
     background-image: url(../img/plans_background.png);
