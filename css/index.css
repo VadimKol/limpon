@@ -41,8 +41,11 @@ a {
     bottom: 10px;
     right: 9px;
 }
-.btn-submit, .page-form .btn-primary {
+.btn-submit:hover, .page-form .btn-primary:hover {
     cursor: pointer;
+}
+.btn-submit:focus, .page-form .btn-primary:focus {
+    outline: none;
 }
 .btn-stat2 {
     padding: 20px 62px;
@@ -57,9 +60,6 @@ a {
 }
 .btn-primary:hover, .btn-primary:focus {
     color: #1085e4;
-    background-color: #fff;
-}
-.active-plan .btn-primary:hover, .active-plan .btn-primary:focus {
     background-color: transparent;
 }
 .btn-plan:hover, .btn-plan:focus {
@@ -176,7 +176,6 @@ h1 {
 .logo {
     display: block;
     flex-basis: 181px;
-    /* flex-basis: 16.321009918845807033363390441839%; */
     height: 49px;
     background-image: url(../img/header/big_logo.png);
 }
@@ -242,7 +241,10 @@ h1 {
     display: flex;
     justify-content: space-between;
 }
-.subscribe-form { /*ie11*/
+.subscribe {
+    flex-basis: 540px;
+}
+.subscribe-form {
     position: relative;
 }
 .subscribe p {
@@ -255,31 +257,19 @@ h1 {
 .subscribe-email {
     font-weight: 400;
     font-size: 14px;
-    text-indent: 39px;
     color: #dfe8ff;
     background-color: transparent;
-    width: 537px; /*540px*/
+    width: 54%;
     height: 16px; /*ie 11 ?! 19px !?*/
     border-radius: 35px;
-    padding: 24px 0 26px;
+    padding: 24px 206px 26px 38px;
     border: 2px solid rgba(255, 255, 255, 0.2);
 }
-.subscribe-email::placeholder {
-    color: #b1c3ee;
-}
-.subscribe-email:-ms-input-placeholder {
-    color: #b1c3ee;
-}
-.subscribe-email::-webkit-input-placeholder {
-    color: #b1c3ee;
-}
-.subscribe-email::-moz-placeholder { 
-    color: #b1c3ee;
-    opacity: 1;
-}
-.subscribe-email:-moz-placeholder {
-    color: #b1c3ee;
-}
+.subscribe-email::placeholder               {color: #b1c3ee;}
+.subscribe-email::-webkit-input-placeholder {color: #b1c3ee;}
+.subscribe-email::-moz-placeholder          {color: #b1c3ee;opacity: 1;}
+.subscribe-email:-moz-placeholder           {color: #b1c3ee;}
+.subscribe-email:-ms-input-placeholder      {color: #b1c3ee;}
 .subscribe-email:focus {
     outline: none;
 }
