@@ -1,3 +1,4 @@
+/*Global*/
 body {
     font-family: 'Open Sans', sans-serif;
     /*font-family: 'Poppins', sans-serif;*/
@@ -12,24 +13,8 @@ body {
 a {
     text-decoration: none;
 }
-.nav {
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 2.4px;
-    text-transform: uppercase;
-    list-style-type: none;
-    padding: 70px 0 0;
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-}
-.nav-item {
-    color: #6e7ea9;
-}
+
 /*Button's*/
-/* .btns-overview {
-    text-indent: 5px;
-} */
 .btns-overview a + a {
     margin-left: 16px;
 }
@@ -52,6 +37,9 @@ a {
     letter-spacing: 2.8px;
     border-radius: 25px;
     padding: 15px 43px;
+    position: absolute;
+    bottom: 10px;
+    right: 9px;
 }
 .btn-submit, .page-form .btn-primary {
     cursor: pointer;
@@ -60,8 +48,6 @@ a {
     padding: 20px 62px;
 }
 .plans .btn-primary {
-    /* position: relative;
-    left: 4px; */
     padding: 20px 61px;
 }
 .btn-plan {
@@ -81,6 +67,7 @@ a {
     border: 2px solid #8085b1;
     color: #fff;
 }
+
 /*h1+h2*/
 h1, 
 .header40, 
@@ -100,13 +87,11 @@ h1 {
     font-size: 40px;
     line-height: 1.25;
     letter-spacing: -1.2px;
-    max-width: 258px;
 }
 .header50 {
     font-size: 50px;
     line-height: 1.2;
     letter-spacing: -1.5px;
-    max-width: 540px;
     white-space: pre-wrap;
 }
 .page-stats .header50,
@@ -115,6 +100,9 @@ h1 {
 .page-details .header40 {
     text-align: center;
     margin: 0 auto;
+}
+.page-subscribe .header50 {
+    margin: 65px 0 28px;
 }
 .page-grid .header40 {
     font-weight: 700;
@@ -147,7 +135,6 @@ h1 {
     font-weight: 800;
     letter-spacing: 3.6px;
     text-transform: uppercase;
-    /* text-indent: 2px; */
     color: #1085e4;
     margin-bottom: 14px;
 }
@@ -170,15 +157,136 @@ h1 {
 .page-details .subheader {
     margin-bottom: 17px;
 }
-.page-subscribe .subheader,
 .page-plans .subheader,
 .page-team .subheader {
     margin-bottom: 18px;
 }
+.page-subscribe .subheader,
 .page-testimonials .subheader {
     margin-bottom: 19px;
 }
-/*Grid+flex boxes*/
+
+/*Grid + flex + main styles*/
+.box-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 304px;
+}
+.logo {
+    display: block;
+    flex-basis: 181px;
+    /* flex-basis: 16.321009918845807033363390441839%; */
+    height: 49px;
+    background-image: url(../img/header/big_logo.png);
+}
+.nav {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+/*     justify-content: space-between;
+    flex-basis: 69.34174932371505861136158701533%; */
+}
+.nav-item {
+    color: #6e7ea9;
+}
+.nav li {
+    margin-right: 38px;
+}
+.nav li:last-child {
+    margin-right: 0;
+}
+.header-screen {
+    position: absolute;
+    top: 189px;
+    right: 0;
+    width: 895px;
+    height: 740px;
+    background-image: url(../img/header/header_img.png);
+}
+.sponsors-list {
+    max-width: 1109px;
+    margin: 0 auto;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.first-sponsor {
+    flex-basis: 198px;
+    height: 58px;
+    background-image: url(../img/sponsors/token_logo.png);
+}
+.second-sponsor {
+    flex-basis: 200px;
+    height: 69px;
+    background-image: url(../img/sponsors/magneto_logo.png);
+}
+.third-sponsor {
+    flex-basis: 201px;
+    height: 47px;
+    background-image: url(../img/sponsors/boohoo_logo.png);
+}
+.fourth-sponsor {
+    flex-basis: 200px;
+    height: 69px;
+    background-image: url(../img/sponsors/fractal_logo.png);
+}
+.box-subscribe {
+    display: flex;
+    justify-content: space-between;
+}
+.subscribe-form { /*ie11*/
+    position: relative;
+}
+.subscribe p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5555;
+    color: #dfe8ff;
+    margin: 18px 0 37px;
+}
+.subscribe-email {
+    font-weight: 400;
+    font-size: 14px;
+    text-indent: 39px;
+    color: #dfe8ff;
+    background-color: transparent;
+    width: 537px; /*540px*/
+    height: 16px; /*ie 11 ?! 19px !?*/
+    border-radius: 35px;
+    padding: 24px 0 26px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+.subscribe-email::placeholder {
+    color: #b1c3ee;
+}
+.subscribe-email:-ms-input-placeholder {
+    color: #b1c3ee;
+}
+.subscribe-email::-webkit-input-placeholder {
+    color: #b1c3ee;
+}
+.subscribe-email::-moz-placeholder { 
+    color: #b1c3ee;
+    opacity: 1;
+}
+.subscribe-email:-moz-placeholder {
+    color: #b1c3ee;
+}
+.subscribe-email:focus {
+    outline: none;
+}
+.subscribe-android {
+    flex-basis: 354px;
+    height: 417px;
+}
 .grid-item h3 {
     font-weight: 600;
     font-size: 20px;
@@ -211,6 +319,11 @@ h1 {
     color: #bacbdc;
     margin-bottom: 9px;
 }
+.Screen {
+   /*  display: block;
+    margin: 0 auto; */
+    vertical-align: bottom; /*comment*/
+}
 .plans {
     display: flex;
     justify-content: space-between;
@@ -237,7 +350,6 @@ h1 {
     letter-spacing: 2.8px;
     text-transform: uppercase;
     text-align: center;
-    /* text-indent: 7px; */
     color: #0084ff;
     margin: 0 0 39px;
 }
@@ -248,7 +360,6 @@ h1 {
     font-size: 14px;
     font-weight: 400;
     text-align: center;
-    /* text-indent: 5px; */
     color: #8085b1;
 }
 .plans-bonuses li {
@@ -260,21 +371,39 @@ h1 {
 .active-plan h3, .active-plan p, .active-plan .plans-bonuses {
     color: #fff;
 }
-.Screen {
-   /*  display: block;
-    margin: 0 auto; */
-    vertical-align: bottom; /*comment*/
-}
+
 /*Background's and Pages*/
+.page-header,
+.page-company,
+.page-stats,
+.page-team,
+.plans-item {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.page-header {
+    padding: 54px 0 330px;
+    background-image: url(../img/header/header_background.png);
+}
+.page-company {
+    padding: 100px 0 105px;
+    background-image: url(../img/sponsors/sponsor_background.png);
+}
 .page-subscribe {
-    background-image: linear-gradient(120deg, rgb(10,32,144) 0%, rgb(35,119,205) 100%);
+    padding: 52px 0; 
+    background: #0a2090;
+    background: -moz-linear-gradient(-30deg, #0a2090 0%, #2377cd 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #0a2090), color-stop(100%, #2377cd));
+    background: -webkit-linear-gradient(-30deg, #0a2090 0%, #2377cd 100%);
+    background: -o-linear-gradient(-30deg, #0a2090 0%, #2377cd 100%);
+    background: -ms-linear-gradient(-30deg, #0a2090 0%, #2377cd 100%);
+    background: linear-gradient(120deg, #0a2090 0%, #2377cd 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', endColorstr='#2377cd', GradientType=1 );
 }
 .page-stats {
     padding: 117px 0 114px;
     background-image: url(../img/info_background.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 .blue-bg {
     background-color: #1085e4;
@@ -282,7 +411,6 @@ h1 {
 }
 .page-team {
     background-image: url(../img/team/team_background.png);
-    background-repeat: no-repeat;
 }
 .page-details {
     padding-top: 117px;
@@ -297,9 +425,7 @@ h1 {
     padding: 68px 0 98px;
     text-align: center;
     background-image: url(../img/plans_background.png);
-    background-repeat: no-repeat;
     background-position: right;
-    background-size: cover;
 }
 .active-plan {
     background-color: #192b59;
