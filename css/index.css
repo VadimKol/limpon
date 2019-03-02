@@ -4,10 +4,11 @@ body {
     /*font-family: 'Poppins', sans-serif;*/
     color: #7581a1;
     font-size: 16px;
+    font-weight: 400;
     line-height: 1.625;
 }
 .wrapper {
-    max-width: 1109px;
+    max-width: 1110px;
     margin: 0 auto;
 }
 a {
@@ -106,6 +107,7 @@ h1 {
 }
 .page-grid .header40 {
     font-weight: 700;
+    margin: 0 0 20px;
 }
 .page-subscribe .header50,
 .page-testimonials .header40,
@@ -167,6 +169,7 @@ h1 {
 }
 
 /*Grid + flex + main styles*/
+/*header*/
 .box-header {
     display: flex;
     justify-content: space-between;
@@ -208,8 +211,9 @@ h1 {
     height: 740px;
     background-image: url(../img/header/header_img.png);
 }
+/*sponsors*/
 .sponsors-list {
-    max-width: 1109px;
+    max-width: 1110px;
     margin: 0 auto;
     list-style-type: none;
     padding: 0;
@@ -237,6 +241,104 @@ h1 {
     height: 69px;
     background-image: url(../img/sponsors/fractal_logo.png);
 }
+/*grid*/
+.grid {
+    display: grid;
+    grid-template-areas: "a c d"
+                         "b c d"
+                         "b f g"
+                         "e f g"
+                         "e h h";
+    max-width: 1110px;
+    margin: 0 auto;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
+}
+.grid-title  {grid-area: a;}
+.grid-item-1 {grid-area: b;}
+.grid-item-2 {grid-area: c;}
+.grid-item-3 {grid-area: d;}
+.grid-item-4 {grid-area: e;}
+.grid-item-5 {grid-area: f;}
+.grid-item-6 {grid-area: g;}
+.grid-text   {grid-area: h;}
+
+.grid-item {
+    text-align: center;
+    box-shadow: 0 8px 16px 0 rgba(180,181,181,0.2);
+    border-radius: 10px;
+    /* background-color: lime; */
+    padding: 39px 39px 63px;
+}
+.grid-item-4 {
+    margin: -31px 0 3px; /*NEGATIVE MARGIN!!!*/
+}
+.grid p {
+    margin: 0;
+}
+.grid-ico {
+    height: 92px;
+    margin-bottom: 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+} 
+.grid-item-1 .grid-ico {
+    background-image: url(../img/grid/mobile_ico.png);
+    background-size: 79px 82px;
+}
+.grid-item-2 .grid-ico {
+    background-image: url(../img/grid/doc_ico.png);
+    background-size: 73px 79px;
+}
+.grid-item-3 .grid-ico {
+    background-image: url(../img/grid/work_ico.png);
+    background-size: 89px 85px;
+}
+.grid-item-4 .grid-ico {
+    background-image: url(../img/grid/edit_ico.png);
+    background-size: 103px 92px;
+}
+.grid-item-5 .grid-ico {
+    background-image: url(../img/grid/resp_ico.png);
+    background-size: 85px 90px;
+}
+.grid-item-6 .grid-ico {
+    background-image: url(../img/grid/sup_ico.png);
+    background-size: 100px 87px;
+}
+.grid-item-title {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -0.6px;
+    color: #192b59;
+    margin: 0 0 15px;
+}
+.grid-item p {
+    margin-bottom: 16px;
+}
+.grid-item a {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1085e4;
+}
+.grid-text {
+    padding-left: 20px;
+}
+.grid-name {
+    padding-top: 11px;
+    padding-left: 6px;
+    font-weight: 800;
+    letter-spacing: -0.48px;
+    color: #192b59;
+}
+.grid-position {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    color: #1085e4;
+}
+/*email-subscribe*/
 .box-subscribe {
     display: flex;
     justify-content: space-between;
@@ -248,14 +350,12 @@ h1 {
     position: relative;
 }
 .subscribe p {
-    font-weight: 400;
     font-size: 18px;
     line-height: 1.5555;
     color: #dfe8ff;
     margin: 18px 0 37px;
 }
 .subscribe-email {
-    font-weight: 400;
     font-size: 14px;
     color: #dfe8ff;
     background-color: transparent;
@@ -277,17 +377,7 @@ h1 {
     flex-basis: 354px;
     height: 417px;
 }
-.grid-item h3 {
-    font-weight: 600;
-    font-size: 20px;
-    letter-spacing: -0.6px;
-    color: #192b59;
-}
-.grid-item a {
-    font-size: 14px;
-    font-weight: 600;
-    color: #1085e4;
-}
+/*dashboard-stats*/
 .list-stats {
     list-style-type: none;
     padding: 0;
@@ -314,6 +404,7 @@ h1 {
     margin: 0 auto; */
     vertical-align: bottom; /*comment*/
 }
+/*plans*/
 .plans {
     display: flex;
     justify-content: space-between;
@@ -348,7 +439,6 @@ h1 {
     padding: 0;
     margin: 0 0 63px;
     font-size: 14px;
-    font-weight: 400;
     text-align: center;
     color: #8085b1;
 }
@@ -379,6 +469,9 @@ h1 {
 .page-company {
     padding: 100px 0 105px;
     background-image: url(../img/sponsors/sponsor_background.png);
+}
+.page-grid {
+    padding: 120px 0 117px;
 }
 .page-subscribe {
     padding: 52px 0; 
