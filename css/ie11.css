@@ -51,4 +51,10 @@
 .subscribe-email {
     height: 16px;
 }
+.soft-desc {
+    scrollbar-base-color: #1085e4;
+    scrollbar-track-color: #f3f6ff;
+    scrollbar-arrow-color: #f3f6ff;
+    scrollbar-shadow-color: #1085e4;
+}
 }

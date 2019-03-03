@@ -361,7 +361,7 @@ h1 {
     background-color: transparent;
     width: 54%;
     border-radius: 35px;
-    padding: 24px 206px 26px 38px;
+    padding: 24px 207px 26px 38px;
     border: 2px solid rgba(255, 255, 255, 0.2);
 }
 .subscribe-email::placeholder               {color: #b1c3ee;}
