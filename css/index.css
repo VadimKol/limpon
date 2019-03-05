@@ -121,6 +121,11 @@ h1 {
 }
 .page-app .header50 {
     max-width: 456px;
+    margin: 0 0 36px;
+}
+.page-soft_stats .header50, 
+.page-soft_stats2 .header50 {
+    margin: 0 0 27px;
 }
 .page-details .header40 {
     max-width: 432px;
@@ -465,10 +470,80 @@ h1 {
     color: #bacbdc;
     margin-bottom: 9px;
 }
+/*page-app*/
+.flex-app {
+    display: flex;
+    justify-content: flex-start;
+}
+.flex-box {
+    flex-basis: 54%;
+}
+.flex-box p {
+    margin: 0;
+}
+.flex-box p + p {
+    margin: 27px 0 18px;
+    font-weight: 700;
+    letter-spacing: 3.2px;
+    color: #c4d2dd;
+    text-transform: uppercase;
+}
+.market-ref {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    right: 15px;
+}
+.market-ref a {
+    display: block;
+}
+.gplay {
+    width: 189px;
+    height: 81px;
+    background-image: url(../img/video/google_play_ico.png);
+    background-repeat: no-repeat;
+}
+.appstore {
+    width: 180px;
+    height: 81px;
+    background-image: url(../img/video/app_store_ico.png);
+    background-repeat: no-repeat;
+}
+.app-video {
+    position: absolute;
+    top: 52px;
+    right: 109px;
+}
+.page-soft_stats .flex-app, .page-soft_stats2 .flex-app {
+    justify-content: space-between;
+    align-items: center;
+}
+.page-soft_stats .flex-box {
+    flex-basis: 54.4%;
+}
+.page-soft_stats2 .flex-box {
+    padding-left: 32px;
+}
+.page-soft_stats p, .page-soft_stats2 p {
+    margin-bottom: 50px;
+}
+.stats1 {
+    position: relative;
+    top: 13px;
+    right: 21px;
+}
+.stats2 {
+    position: relative;
+    top: 12px;
+    left: 22px;
+}
+.app-video img,
+.stats1,
+.stats2,
 .Screen {
-   /*  display: block;
-    margin: 0 auto; */
-    vertical-align: bottom; /*comment*/
+    vertical-align: bottom;
 }
 /*plans*/
 .plans {
@@ -523,6 +598,9 @@ h1 {
 .page-company,
 .page-software,
 .page-stats,
+.page-app,
+.page-soft_stats,
+.page-soft_stats2,
 .page-team,
 .plans-item {
     background-repeat: no-repeat;
@@ -560,6 +638,19 @@ h1 {
     padding: 117px 0 114px;
     background-image: url(../img/info_background.png);
 }
+.page-app {
+    position: relative;
+    padding: 111px 0 99px;
+    background-image: url(../img/video/video_back_no_btriangle.png);
+}
+.page-soft_stats {
+    padding: 119px 0 139px;
+    background-image: url(../img/stats/stats_background.png);
+}
+.page-soft_stats2 {
+    padding: 120px 0 139px;
+    background-image: url(../img/samirasa/samirasa_background.png);
+}
 .blue-bg {
     background-color: #1085e4;
     border-top-right-radius: 400px;
@@ -569,7 +660,7 @@ h1 {
 }
 .page-details {
     padding-top: 117px;
-    text-align: center; /*comment .Screen*/
+    text-align: center;
     background-color: #edf6ff;
 }
 .page-plans {
