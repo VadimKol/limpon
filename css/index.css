@@ -133,6 +133,7 @@ h1 {
 }
 .page-testimonials .header40 {
     max-width: 331px;
+    margin: 0 0 11px;
 }
 .page-plans .header40 {
     margin-bottom: 81px;
@@ -545,6 +546,52 @@ h1 {
 .Screen {
     vertical-align: bottom;
 }
+/*page-testimonials*/
+.box-comment {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 49px;
+}
+.box-item {
+    flex-basis: 350px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 16px 32px 0px rgba(185, 185, 185, 0.2);
+    padding: 34px 0 13px;
+} 
+.box-item-text {
+    font-size: 14px;
+    line-height: 1.7152;
+    color: #8085b1;
+    margin: 0 0 27px;
+}
+.box-item .person::before{
+    content: url(../img/avatar_rolin_mirano.png);
+    float: left;
+    margin-right: 19px;
+    margin-left: -4px;
+}
+.box-item .person {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    color: #1085e4;
+}
+.box-item .person span {
+    display: block;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -0.66px;
+    line-height: 1.1;
+    text-transform: capitalize;
+    color: #000958;
+    margin-bottom: 3px;
+}
+.box-item-text, .box-item .person {
+    padding: 0 58px 0 40px;
+}
 /*plans*/
 .plans {
     display: flex;
@@ -651,7 +698,11 @@ h1 {
     padding: 120px 0 139px;
     background-image: url(../img/samirasa/samirasa_background.png);
 }
+.page-testimonials {
+    padding: 120px 0 164px;
+}
 .blue-bg {
+    padding: 75px 0 0;
     background-color: #1085e4;
     border-top-right-radius: 400px;
 }
