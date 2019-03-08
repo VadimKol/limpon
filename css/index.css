@@ -296,31 +296,36 @@ h1 {
     height: 92px;
     margin-bottom: 32px;
     background-repeat: no-repeat;
-    background-position: center;
 } 
 .grid-item-1 .grid-ico {
     background-image: url(../img/grid/mobile_ico.png);
     background-size: 79px 82px;
+    background-position: 95px 9px;
 }
 .grid-item-2 .grid-ico {
     background-image: url(../img/grid/doc_ico.png);
     background-size: 73px 79px;
+    background-position: 109px 21px;
 }
 .grid-item-3 .grid-ico {
     background-image: url(../img/grid/work_ico.png);
     background-size: 89px 85px;
+    background-position: 100px 6px;
 }
 .grid-item-4 .grid-ico {
     background-image: url(../img/grid/edit_ico.png);
     background-size: 103px 92px;
+    background-position: 101px -1px;
 }
 .grid-item-5 .grid-ico {
     background-image: url(../img/grid/resp_ico.png);
     background-size: 85px 90px;
+    background-position: 101px 1px;
 }
 .grid-item-6 .grid-ico {
     background-image: url(../img/grid/sup_ico.png);
     background-size: 100px 87px;
+    background-position: 89px 4px;
 }
 .grid-item-title {
     font-size: 20px;
