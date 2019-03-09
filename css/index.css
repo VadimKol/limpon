@@ -42,10 +42,10 @@ a {
     bottom: 10px;
     right: 9px;
 }
-.btn-submit:hover, .page-form .btn-primary:hover, .member-social:hover {
+.btn-submit:hover, .page-form .btn-primary:hover, .btn-more:hover {
     cursor: pointer;
 }
-.btn-submit:focus, .page-form .btn-primary:focus, .member-social:focus {
+.btn-submit:focus, .page-form .btn-primary:focus, .btn-more:focus {
     outline: none;
 }
 .btn-stat2 {
@@ -68,9 +68,10 @@ a {
     border: 2px solid #8085b1;
     color: #fff;
 }
-.member-social:hover, .member-social:focus {
+.btn-more:hover, .btn-more:focus {
     color: #fff;
     background-color: #1a88e1;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 /*h1+h2*/
@@ -688,11 +689,11 @@ h1 {
     color: #1a88e1;
     text-transform: uppercase;
 }
-.member-social {
+.btn-more {
     font-family: 'Poppins', sans-serif;
     font-size: 30px;
     font-weight: 600;
-    line-height: 1.6666666666666;
+    line-height: 1.666666666;
     color: #a1aecf;
     background-color: #f3f3f3;
     width: 50px;
@@ -700,8 +701,27 @@ h1 {
     margin: 0 auto;
     border: none;
     padding: 0;
-    transition: color 0.2s, background-color 0.2s;
+    transition: color 0.2s, background-color 0.2s, box-shadow 0.2s;
 }
+.fab {
+    display: none;
+    font-size: 14px;
+    color: #9ea6b1;
+    background-color: #fafafa;
+    width: 50px;
+    padding: 18px 0;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: color 0.2s, background-color 0.2s, box-shadow 0.2s;
+}
+.fab:last-child {
+    margin-right: 0;
+}
+.fab:hover, .fab:focus{
+    color: #fff;
+    background-color: #1a88e1;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+} 
 
 /*Background's and Pages*/
 .page-header,

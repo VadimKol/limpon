@@ -263,17 +263,29 @@
                 <div class="box-team-item">
                     <img src="img/team/ricardo_t_obrien.jpg" alt="Ricardo T. Obrien" class="ava-team-member">
                     <p class="team-member"><span>founder</span>Ricardo T. Obrien</p>
-                    <button type="button" class="member-social">+</button>
+                    <button type="button" class="btn-more">+</button>
+                    <a target="_blank" href="" class="fab fa-facebook-f"></a>
+                    <a target="_blank" href="" class="fab fa-twitter"></a>
+                    <a target="_blank" href="" class="fab fa-behance"></a>
+                    <a target="_blank" href="" class="fab fa-chrome"></a>
                 </div>
                 <div class="box-team-item">
                     <img src="img/team/alberto_del_rio.jpg" alt="Alberto Del Rio" class="ava-team-member">
                     <p class="team-member"><span>ceo</span>Alberto Del Rio</p>
-                    <button type="button" class="member-social">+</button>
+                    <button type="button" class="btn-more">+</button>
+                    <a target="_blank" href="" class="fab fa-facebook-f"></a>
+                    <a target="_blank" href="" class="fab fa-twitter"></a>
+                    <a target="_blank" href="" class="fab fa-behance"></a>
+                    <a target="_blank" href="" class="fab fa-chrome"></a>
                 </div>
                 <div class="box-team-item">
                     <img src="img/team/thomas_alva_adison.jpg" alt="Thomas Alva Adison" class="ava-team-member">
                     <p class="team-member"><span>designer</span>Thomas Alva Adison</p>
-                    <button type="button" class="member-social">+</button>
+                    <button type="button" class="btn-more">+</button>
+                    <a target="_blank" href="" class="fab fa-facebook-f"></a>
+                    <a target="_blank" href="" class="fab fa-twitter"></a>
+                    <a target="_blank" href="" class="fab fa-behance"></a>
+                    <a target="_blank" href="" class="fab fa-chrome"></a>
                 </div>
             </div>
         </div>
@@ -300,5 +312,12 @@
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $(".btn-more").click(function(){
+                $(this).hide().siblings(".fab").show().css("display", "inline-block");
+            });
+        });
+    </script>
 </body>
 </html>
