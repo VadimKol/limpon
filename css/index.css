@@ -690,6 +690,7 @@ h1 {
     text-transform: uppercase;
 }
 .btn-more {
+    display: none; /*no js no button*/
     font-family: 'Poppins', sans-serif;
     font-size: 30px;
     font-weight: 600;
@@ -704,7 +705,6 @@ h1 {
     transition: color 0.2s, background-color 0.2s, box-shadow 0.2s;
 }
 .fab {
-    display: none;
     font-size: 14px;
     color: #9ea6b1;
     background-color: #fafafa;
