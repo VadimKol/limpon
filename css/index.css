@@ -59,6 +59,9 @@ a {
     color: #8085b1;
     border: 2px solid rgba(0,0,0,0.1);
 }
+.btn-contact {
+    padding: 21px 50px 22px 54px;
+}
 .btn-primary:hover, .btn-primary:focus {
     color: #1085e4;
     background-color: transparent;
@@ -146,7 +149,7 @@ h1 {
     margin-bottom: 137px;
 }
 .page-form .header50 {
-    margin: 0;
+    margin: 76px 0 49px;
 }
 .subheader {
     display: block;
@@ -208,8 +211,6 @@ h1 {
     padding: 0;
     margin: 0;
     display: flex;
-/*     justify-content: space-between;
-    flex-basis: 69.34174932371505861136158701533%; */
 }
 .nav-item {
     color: #6e7ea9;
@@ -301,32 +302,33 @@ h1 {
 .grid-item-1 .grid-ico {
     background-image: url(../img/grid/mobile_ico.png);
     background-size: 79px 82px;
-    background-position: 95px 9px;
+    background-position: center 9px;
 }
 .grid-item-2 .grid-ico {
     background-image: url(../img/grid/doc_ico.png);
     background-size: 73px 79px;
-    background-position: 109px 21px;
+    background-position: center 13px;
+    transform: translateY(8px);
 }
 .grid-item-3 .grid-ico {
     background-image: url(../img/grid/work_ico.png);
     background-size: 89px 85px;
-    background-position: 100px 6px;
+    background-position: center 6px;
 }
 .grid-item-4 .grid-ico {
     background-image: url(../img/grid/edit_ico.png);
     background-size: 103px 92px;
-    background-position: 101px -1px;
+    background-position: center -1px;
 }
 .grid-item-5 .grid-ico {
     background-image: url(../img/grid/resp_ico.png);
     background-size: 85px 90px;
-    background-position: 101px 1px;
+    background-position: center 1px;
 }
 .grid-item-6 .grid-ico {
     background-image: url(../img/grid/sup_ico.png);
     background-size: 100px 87px;
-    background-position: 89px 4px;
+    background-position: center 4px;
 }
 .grid-item-title {
     font-size: 20px;
@@ -532,7 +534,10 @@ h1 {
     top: 52px;
     right: 109px;
 }
-.page-soft_stats .flex-app, .page-soft_stats2 .flex-app {
+.page-soft_stats .flex-app, 
+.page-soft_stats2 .flex-app,
+.page-form .flex-app,
+.footer .flex-app {
     justify-content: space-between;
     align-items: center;
 }
@@ -558,6 +563,7 @@ h1 {
 .app-video img,
 .stats1,
 .stats2,
+.stats3,
 .Screen {
     vertical-align: bottom;
 }
@@ -704,7 +710,7 @@ h1 {
     padding: 0;
     transition: color 0.2s, background-color 0.2s, box-shadow 0.2s;
 }
-.fab {
+.page-team .fab {
     font-size: 14px;
     color: #9ea6b1;
     background-color: #fafafa;
@@ -714,14 +720,91 @@ h1 {
     margin-right: 10px;
     transition: color 0.2s, background-color 0.2s, box-shadow 0.2s;
 }
-.fab:last-child {
+.page-team .fab:last-child {
     margin-right: 0;
 }
-.fab:hover, .fab:focus{
+.page-team .fab:hover, .page-team .fab:focus{
     color: #fff;
     background-color: #1a88e1;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-} 
+}
+/*page-form*/
+.stats3 {
+    position: relative;
+    top: 45px;
+    right: 22px;
+}
+.contact-form {
+    flex-basis: 514px;
+    margin-right: 95px;
+}
+.contact-form-item {
+    width: 81%;
+    display: block;
+    font-size: 14px;
+    color: #192b59;
+    background-color: #fff;
+    border-radius: 35px;
+    border: 2px solid rgba(72, 72, 72, 0.1);
+    padding: 25px 55px 25px 39px;
+    margin-bottom: 20px;
+}
+.item-message {
+    resize: none;
+    padding-bottom: 20px;
+    margin-bottom: 39px;
+}
+.contact-form form {
+    position: relative;
+}
+.page-form .fas {
+    margin: 0;
+    font-size: 14px;
+    color: #8995b3;
+    position: absolute;
+    right: 39px;
+}
+.page-form .fa-user {
+    top: 28px;
+}
+.page-form .fa-envelope {
+    top: 119px;
+}
+.page-form .fa-pen {
+    top: 209px;
+}
+.contact-form-item::placeholder               {color: #8995b3;}
+.contact-form-item::-webkit-input-placeholder {color: #8995b3;}
+.contact-form-item::-moz-placeholder          {color: #8995b3;opacity: 1;}
+.contact-form-item:-moz-placeholder           {color: #8995b3;}
+.contact-form-item:-ms-input-placeholder      {color: #8995b3;}
+.contact-form-item:focus {
+    outline: none;
+}
+/*footer*/
+.footer p {
+    color: #8c94bc;
+}
+.footer-logo {
+    text-transform: uppercase;
+    color: #1085e4;
+}
+.social {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.social li {
+    margin-right: 25px;
+}
+.social li:last-child {
+    margin-right: 0;
+}
+.social .fab {
+    font-size: 16px;
+    color: #fff;
+}
 
 /*Background's and Pages*/
 .page-header,
@@ -814,5 +897,10 @@ h1 {
     background-image: url(../img/team/team_background.png);
 }
 .page-form {
+    padding: 35px 0 120px;
     background-image: url(../img/contact/contact_background.png);
+}
+.footer {
+    padding: 5px 0 7px;
+    background-color: #192b59;
 }
