@@ -214,6 +214,10 @@ h1 {
 }
 .nav-item {
     color: #6e7ea9;
+    transition: color 0.2s;
+}
+.nav-item:hover, .nav-item:focus {
+    color: #1085e4;
 }
 .nav li {
     margin-right: 38px;
