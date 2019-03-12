@@ -140,7 +140,7 @@ h1 {
 }
 .page-testimonials .header40 {
     max-width: 331px;
-    margin: 0 0 11px;
+    margin: 0 0 60px;
 }
 .page-plans .header40 {
     margin-bottom: 81px;
@@ -572,11 +572,20 @@ h1 {
     vertical-align: bottom;
 }
 /*page-testimonials*/
+.blue-bg {
+    position: absolute;
+    top: 120px;
+    background-color: #1085e4;
+    border-top-right-radius: 400px;
+    width: calc(1110px + (100% - 1110px) * 0.75);
+    height: 400px;
+}
+.page-testimonials .wrapper {
+    position: relative;
+}
 .box-comment {
     display: flex;
     justify-content: space-between;
-    position: relative;
-    top: 49px;
 }
 .box-item {
     flex-basis: 350px;
@@ -875,12 +884,8 @@ h1 {
     background-color: #edf6ff;
 }
 .page-testimonials {
-    padding: 120px 0 164px;
-}
-.blue-bg {
-    padding: 75px 0 0;
-    background-color: #1085e4;
-    border-top-right-radius: 400px;
+    position: relative;
+    padding: 195px 0 115px;
 }
 .page-plans {
     padding-bottom: 120px;
@@ -907,4 +912,11 @@ h1 {
 .footer {
     padding: 5px 0 7px;
     background-color: #192b59;
+}
+
+/*media*/
+@media screen and (max-width: 1110px) {
+    .blue-bg {
+        width: 100%;
+    }
 }
