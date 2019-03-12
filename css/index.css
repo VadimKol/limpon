@@ -885,10 +885,10 @@ h1 {
 }
 .page-testimonials {
     position: relative;
-    padding: 195px 0 115px;
+    padding: 195px 0 55px;
 }
 .page-plans {
-    padding-bottom: 120px;
+    padding: 60px 0 120px;
 }
 .plans-item {
     flex-basis: 31.5599%;
