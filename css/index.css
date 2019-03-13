@@ -9,6 +9,8 @@ body {
 .wrapper {
     max-width: 1110px;
     margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
 }
 a {
     text-decoration: none;
@@ -237,31 +239,35 @@ h1 {
 .sponsors-list {
     max-width: 1110px;
     margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
     list-style-type: none;
-    padding: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+}
+.sponsors-list li {
+    flex-basis: 25%;
+    height: 69px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .first-sponsor {
-    flex-basis: 198px;
-    height: 58px;
     background-image: url(../img/sponsors/token_logo.png);
+    background-size: 198px 58px;
 }
 .second-sponsor {
-    flex-basis: 200px;
-    height: 69px;
     background-image: url(../img/sponsors/magneto_logo.png);
+    background-size: 200px 69px;
 }
 .third-sponsor {
-    flex-basis: 201px;
-    height: 47px;
     background-image: url(../img/sponsors/boohoo_logo.png);
+    background-size: 201px 47px;
 }
 .fourth-sponsor {
-    flex-basis: 200px;
-    height: 69px;
     background-image: url(../img/sponsors/fractal_logo.png);
+    background-size: 200px 69px;
 }
 /*grid*/
 .grid {
@@ -276,6 +282,8 @@ h1 {
     gap: 30px;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: start;
+    padding: 0 15px;
+    box-sizing: border-box;
 }
 .grid-title  {grid-area: a;}
 .grid-item-1 {grid-area: b;}
@@ -369,6 +377,7 @@ h1 {
 .box-subscribe {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap-reverse;
 }
 .subscribe {
     flex-basis: 540px;
@@ -915,8 +924,138 @@ h1 {
 }
 
 /*media*/
+@media screen and (max-width: 1130px) {
+    /*grid*/
+    .page-grid {
+        padding: 60px 0 58px;
+    }
+    .grid {
+        grid-template-areas: "a a"
+                             "b c"
+                             "b c"
+                             "d e"
+                             "d e"
+                             "f g"
+                             "f g"
+                             "h h";
+        grid-template-columns: 350px 350px;
+        justify-content: center;
+    }
+    .page-grid .header40 {
+        margin: 0;
+        text-align: center;
+    }
+    .page-grid .subheader {
+        margin-bottom: 0;
+    }
+    .grid-item-4 {
+        margin: 0;
+    }
+    .grid-text, .grid-name {
+        padding-left: 0;
+    }
+}
 @media screen and (max-width: 1110px) {
     .blue-bg {
         width: 100%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    /*sponsors*/
+    .sponsors-list li {
+        flex-basis: 50%;
+    }
+    .first-sponsor, .second-sponsor {
+        margin-bottom: 15px;
+    }
+    .page-company {
+        padding: 58px 0 63px;
+    }
+    /*email-subscribe*/
+    .page-subscribe {
+        padding: 22px 0 32px;
+    }
+    .page-subscribe .header50 {
+        margin-top: 35px;
+    }
+    .page-subscribe .subheader {
+        margin-bottom: 0;
+    }
+    .box-subscribe {
+        justify-content: center;
+    }
+    .subscribe {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .subscribe p br {
+        display: none;
+    }
+    .subscribe-email {
+        width: calc(100% - 249px);
+    }
+    .subscribe-android {
+        height: 208px;
+        flex-basis: auto;
+    }
+    .subscribe-form {
+        width: 674px;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 800px) {
+    /*grid*/
+    .grid {
+        grid-template-areas: "a a a"
+                             ". b ."
+                             ". b ."
+                             ". c ."
+                             ". c ."
+                             ". d ."
+                             ". d ."
+                             ". e ."
+                             ". e ."
+                             ". f ."
+                             ". f ."
+                             ". g ."
+                             ". g ."
+                             "h h h";
+        grid-template-columns: 1fr 450px 1fr;
+    }
+    /*email-subscribe*/
+    .subscribe p br {
+        display: inline;
+    }
+    .subscribe-form {
+        width: 100%;
+        max-width: 540px;
+    }
+}
+@media screen and (max-width: 500px) {
+    /*sponsors*/
+    .sponsors-list li {
+        flex-basis: 100%;
+    }
+    .third-sponsor {
+        margin-bottom: 15px;
+    }
+    .page-company {
+        padding: 29px 0 32px;
+    }
+    /*grid*/
+    .grid {
+        grid-template-areas: "a" "b" "b" "c" "c" "d" "d" "e" "e" "f" "f" "g" "g" "h";
+        grid-template-columns: minmax(auto, 348px); /*1 column*/
+    }
+    /*email-subscribe*/
+    .btn-submit {
+        position: static;
+        right: auto;
+        bottom: auto;
+    }
+    .subscribe-email {
+        width: calc(100% - 80px);
+        padding: 24px 38px 26px;
+        margin-bottom: 20px;
     }
 }
