@@ -134,7 +134,7 @@ h1 {
 }
 .page-soft_stats .header50, 
 .page-soft_stats2 .header50 {
-    margin: 0 0 27px;
+    margin: 0 auto 27px;
 }
 .page-details .header40 {
     max-width: 432px;
@@ -395,7 +395,7 @@ h1 {
     font-size: 14px;
     color: #dfe8ff;
     background-color: transparent;
-    width: 54%;
+    width: calc(100% - 249px);
     border-radius: 35px;
     padding: 24px 207px 26px 38px;
     border: 2px solid rgba(255, 255, 255, 0.2);
@@ -492,6 +492,7 @@ h1 {
     text-align: center;
     text-transform: uppercase;
     color: #1085e4;
+    flex-wrap: wrap;
 }
 .list-stats li span {
     display: block;
@@ -526,6 +527,7 @@ h1 {
     margin: 0;
     position: relative;
     right: 15px;
+    flex-wrap: wrap;
 }
 .market-ref a {
     display: block;
@@ -535,6 +537,7 @@ h1 {
     height: 81px;
     background-image: url(../img/video/google_play_ico.png);
     background-repeat: no-repeat;
+    background-position: center;
 }
 .appstore {
     width: 180px;
@@ -546,6 +549,8 @@ h1 {
     position: absolute;
     top: 52px;
     right: 109px;
+    max-width: 561px;
+    width: 38%;
 }
 .page-soft_stats .flex-app, 
 .page-soft_stats2 .flex-app,
@@ -578,10 +583,10 @@ h1 {
 .stats2,
 .stats3,
 .Screen {
+    max-width: 100%;
     vertical-align: bottom;
 }
 .Screen {
-    max-width: 100%;
     padding: 0 15px;
     box-sizing: border-box;
 }
@@ -758,7 +763,7 @@ h1 {
     margin-right: 95px;
 }
 .contact-form-item {
-    width: 81%;
+    width: calc(100% - 98px);
     display: block;
     font-size: 14px;
     color: #192b59;
@@ -883,8 +888,8 @@ h1 {
     right: 0;
     width: 31.302083333%;
     max-width: 601px;
-    height: 109.5%;
-    max-height: 672px;
+    /* height: 672px; */
+    padding-top: 35%;
     background-image: url(../img/rhomb.png);
 }
 .circle-bg {
@@ -893,8 +898,8 @@ h1 {
     left: 0;
     width: 23.177083333%;
     max-width: 445px;
-    height: 108%;
-    max-height: 663px;
+    /* height: 663px; */
+    padding-top: 34.55%;
     background-image: url(../img/circle.png);
 }
 .page-app {
@@ -967,6 +972,67 @@ h1 {
 }
 
 /*Media*/
+@media screen and (max-width: 1300px) {
+    /*page-app*/
+    .page-app {
+        padding: 411px 0 48px;
+    }
+    .app-video {
+        top: 54px;
+        right: calc(50% - 150px);
+        width: 300px;
+    }
+    .flex-box {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .page-app .header50 {
+        margin: 0 auto 36px;
+    }
+    .market-ref {
+        position: static;
+        right: auto;
+        justify-content: center;
+    }
+    .intro-bg {
+        top: 300px;
+    }
+    .flex-box-text {
+        text-align: left;
+    }
+    /*page-soft-stats & page-soft-stats2*/
+    .page-soft_stats, .page-soft_stats2 {
+        padding: 59px 0 69px;
+    }
+    .page-soft_stats .flex-app {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    .page-soft_stats2 .flex-app {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .page-soft_stats .flex-box {
+        flex-basis: 100%;
+    }
+    .page-soft_stats2 .flex-box {
+        padding-left: 0;
+    }
+    .page-soft_stats .header50 {
+        max-width: 506px;
+    }
+    .stats1, .stats2 {
+        position: relative;
+        top: 30px;
+        left: 5.2%;
+    }
+    .tools-ico {
+        margin: 0 auto 8px;
+    }
+    .page-soft_stats p, .page-soft_stats2 p {
+        color: rgb(64, 64, 64);
+    }
+}
 @media screen and (max-width: 1130px) {
     /*grid*/
     .page-grid {
@@ -996,6 +1062,24 @@ h1 {
     }
     .grid-text, .grid-name {
         padding-left: 0;
+    }
+    /*page-form*/
+    .page-form {
+        padding: 35px 0 40px;
+        background-position-x: 61%;
+    }
+    .page-form .flex-app {
+        justify-content: center;
+    }
+    .contact-form {
+        margin-right: 0;
+        text-align: center;
+    }
+    .stats3 {
+        display: none;
+    }
+    .page-form .header50 {
+        margin: 0 0 49px;
     }
 }
 @media screen and (max-width: 1110px) {
@@ -1034,9 +1118,6 @@ h1 {
     .subscribe p br {
         display: none;
     }
-    .subscribe-email {
-        width: calc(100% - 249px);
-    }
     .subscribe-android {
         height: 208px;
         flex-basis: auto;
@@ -1044,6 +1125,13 @@ h1 {
     .subscribe-form {
         width: 674px;
         margin: 0 auto;
+    }
+    /*page-stats*/
+    .rhomb-bg {
+        top: 0;
+    }
+    .circle-bg {
+        bottom: 0;
     }
     /*page-details*/
     .page-details {
@@ -1105,6 +1193,30 @@ h1 {
         width: 100%;
         max-width: 540px;
     }
+    /*page-stats*/
+    .page-stats {
+        padding: 63px 0 60px;
+    }
+    .list-stats li {
+        flex-basis: 50%;
+    }
+    .list-stats li:nth-child(1), .list-stats li:nth-child(2) {
+        margin-bottom: 20px;
+    }
+    /*page-app*/
+    .page-app {
+        padding: 354px 0 48px;
+    }
+    .app-video {
+        top: 41px;
+    }
+    .intro-bg {
+        display: none;
+    }
+    /*page-soft-stats & page-soft-stats2*/
+    .page-soft_stats p, .page-soft_stats2 p {
+        color: #7581a1;
+    }
 }
 @media screen and (max-width: 738px) {
     /*page-details*/
@@ -1139,5 +1251,28 @@ h1 {
         width: calc(100% - 80px);
         padding: 24px 38px 26px;
         margin-bottom: 20px;
+    }
+    /*page-app*/
+    .page-app .header50,
+    .page-soft_stats .header50,
+    .page-soft_stats2 .header50,
+    .page-form .header50 {
+        font-size: 40px;
+        line-height: 1.25;
+        letter-spacing: -1.2px;
+        margin-bottom: 27px;
+    }
+    /*page-details*/
+    .Screen1 {
+        margin-bottom: 0;
+    }
+    .Screen2 {
+        display: none;
+    }
+}
+@media screen and (max-width: 415px) {
+    /*page-app*/
+    .gplay {
+        background-image: url(../img/video/google_play_ico_180.png)
     }
 }
