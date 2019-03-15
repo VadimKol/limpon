@@ -580,15 +580,12 @@ h1 {
 .Screen {
     vertical-align: bottom;
 }
-/*page-testimonials*/
-.blue-bg {
-    position: absolute;
-    top: 120px;
-    background-color: #1085e4;
-    border-top-right-radius: 400px;
-    width: calc(1110px + (100% - 1110px) * 0.75);
-    height: 400px;
+.Screen {
+    max-width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
 }
+/*page-testimonials*/
 .page-testimonials .wrapper {
     position: relative;
 }
@@ -871,13 +868,51 @@ h1 {
     background-image: url(../img/soft_feature/soft_background.png);
 }
 .page-stats {
+    position: relative;
     padding: 117px 0 114px;
-    background-image: url(../img/info_background.png);
+    background-color: #edf6ff;
+}
+.rhomb-bg, .circle-bg {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.rhomb-bg {
+    position: absolute;
+    top: -171px;
+    right: 0;
+    width: 31.302083333%;
+    max-width: 601px;
+    height: 109.5%;
+    max-height: 672px;
+    background-image: url(../img/rhomb.png);
+}
+.circle-bg {
+    position: absolute;
+    bottom: -218px;
+    left: 0;
+    width: 23.177083333%;
+    max-width: 445px;
+    height: 108%;
+    max-height: 663px;
+    background-image: url(../img/circle.png);
 }
 .page-app {
     position: relative;
     padding: 111px 0 99px;
-    background-image: url(../img/video/video_back_no_btriangle.png);
+}
+.intro-bg {
+    font-weight: 800;
+    font-size: 300px;
+    letter-spacing: -9px;
+    line-height: 1;
+    color: rgba(0,0,0,0.04);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    text-align: center;
 }
 .page-soft_stats {
     padding: 119px 0 139px;
@@ -895,6 +930,14 @@ h1 {
 .page-testimonials {
     position: relative;
     padding: 195px 0 55px;
+}
+.blue-bg {
+    position: absolute;
+    top: 120px;
+    background-color: #1085e4;
+    border-top-right-radius: 400px;
+    width: calc(1110px + (100% - 1110px) * 0.75);
+    height: 400px;
 }
 .page-plans {
     padding: 60px 0 120px;
@@ -923,7 +966,7 @@ h1 {
     background-color: #192b59;
 }
 
-/*media*/
+/*Media*/
 @media screen and (max-width: 1130px) {
     /*grid*/
     .page-grid {
@@ -1002,6 +1045,38 @@ h1 {
         width: 674px;
         margin: 0 auto;
     }
+    /*page-details*/
+    .page-details {
+        padding-top: 58px;
+    }
+    .page-details .header40 {
+        margin-bottom: 34px;
+    }
+    .Screen {
+        display: none;
+    }
+    .box-screens {
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+    .Screen1, .Screen2 {
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        margin: 0 auto;
+    }
+    .Screen1 {
+        max-width: 283px;
+        height: 405px;
+        background-image: url(../img/material_pro_screenshot_part1.png);
+        margin-bottom: 20px;
+    }
+    .Screen2 {
+        max-width: 691px;
+        height: 490px;
+        background-image: url(../img/material_pro_screenshot_part2.png);
+    }
 }
 @media screen and (max-width: 800px) {
     /*grid*/
@@ -1029,6 +1104,13 @@ h1 {
     .subscribe-form {
         width: 100%;
         max-width: 540px;
+    }
+}
+@media screen and (max-width: 738px) {
+    /*page-details*/
+    .Screen2 {
+        height: 0;
+        padding-top: 70.911722141%;
     }
 }
 @media screen and (max-width: 500px) {
