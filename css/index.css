@@ -357,6 +357,9 @@ h1 {
     font-weight: 600;
     color: #1085e4;
 }
+.grid-item a:hover, .grid-item a:focus {
+    text-decoration: underline;
+}
 .grid-text {
     padding-left: 20px;
 }
@@ -813,6 +816,9 @@ h1 {
     text-transform: uppercase;
     color: #1085e4;
 }
+.footer-logo:hover, .footer-logo:focus {
+    text-decoration: underline;
+}
 .social {
     list-style-type: none;
     margin: 0;
@@ -828,6 +834,10 @@ h1 {
 .social .fab {
     font-size: 16px;
     color: #fff;
+    transition: color 0.2s;
+}
+.social .fab:hover, .social .fab:focus {
+    color: #1a88e1;
 }
 
 /*Background's and Pages*/
@@ -1216,6 +1226,16 @@ h1 {
     /*page-soft-stats & page-soft-stats2*/
     .page-soft_stats p, .page-soft_stats2 p {
         color: #7581a1;
+    }
+    /*footer*/
+    .footer .flex-app {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        text-align: center;
+    }
+    .footer p {
+        font-size: 14px;
+        flex-basis: 100%;
     }
 }
 @media screen and (max-width: 738px) {
