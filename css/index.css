@@ -418,10 +418,13 @@ h1 {
 /*page-software*/
 .software-note {
     position: absolute;
-    top: 117px;
-    left: -128px;
-    width: 931px;
-    height: 760px;
+    /* top: 117px; */
+    bottom: 125px;
+    left: 0;
+    width: 48.489583333%;
+    max-width: 931px;
+    padding-top: 39.6%;
+    /* height: 760px */;
     background-image: url(../img/soft_feature/notebook_feature.png);
 }
 .software-box {
@@ -887,7 +890,7 @@ h1 {
     padding: 117px 0 114px;
     background-color: #edf6ff;
 }
-.rhomb-bg, .circle-bg {
+.rhomb-bg, .circle-bg, .software-note {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -1011,6 +1014,10 @@ h1 {
         text-align: left;
     }
     /*page-soft-stats & page-soft-stats2*/
+    .page-soft_stats {
+        background-image: none;
+        background-color: #edf6ff;
+    }
     .page-soft_stats, .page-soft_stats2 {
         padding: 59px 0 69px;
     }
@@ -1039,8 +1046,22 @@ h1 {
     .tools-ico {
         margin: 0 auto 8px;
     }
-    .page-soft_stats p, .page-soft_stats2 p {
+    .page-soft_stats2 p {
         color: rgb(64, 64, 64);
+    }
+    /*page-software*/
+    .page-software .tools-ico {
+        margin: 0 0 8px -26px;
+    }
+    /*footer*/
+    .footer .flex-app {
+        justify-content: space-around;
+    }
+}
+@media screen and (max-width: 1200px) {
+    /*page-software*/
+    .soft-desc {
+        margin-right: 36px;
     }
 }
 @media screen and (max-width: 1130px) {
@@ -1093,6 +1114,31 @@ h1 {
     }
 }
 @media screen and (max-width: 1110px) {
+    /*page-software*/
+    .page-software {
+        padding: 56px 0 89px;
+        background-image: none;
+    }
+    .software-box .header50 {
+        white-space: normal;
+        max-width: 525px;
+        margin: 0 auto 26px;
+    }
+    .page-software .tools-ico {
+        margin: 0 auto 8px;
+    }
+    .software-note {
+        display: none;
+    }
+    .software-box {
+        padding-left: 0;
+    }
+    .soft-desc {
+        margin-right: 106px;
+    }
+    .soft-desc-exp {
+        padding-right: 0;
+    }
     .blue-bg {
         width: 100%;
     }
@@ -1223,8 +1269,8 @@ h1 {
     .intro-bg {
         display: none;
     }
-    /*page-soft-stats & page-soft-stats2*/
-    .page-soft_stats p, .page-soft_stats2 p {
+    /*page-soft-stats2*/
+    .page-soft_stats2 p {
         color: #7581a1;
     }
     /*footer*/
@@ -1271,6 +1317,10 @@ h1 {
         width: calc(100% - 80px);
         padding: 24px 38px 26px;
         margin-bottom: 20px;
+    }
+    /*page-software*/
+    .soft-desc {
+        margin-right: 56px;
     }
     /*page-app*/
     .page-app .header50,
