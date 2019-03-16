@@ -57,6 +57,24 @@
         scrollbar-arrow-color: #f3f6ff;
         scrollbar-shadow-color: #1085e4;
     }
+    .app-video img,
+    .stats1,
+    .stats2,
+    .stats3 {
+        width: 100%;
+    }
+    .app-video img {
+        max-width: 561px;
+    }
+    .stats1 {
+        max-width: 473px;
+    }
+    .stats2 {
+        max-width: 461px;
+    }
+    .stats3 {
+        max-width: 460px;
+    }
 }
 @media screen and (max-width: 1130px) and (-ms-high-contrast:none) {
     .grid {
