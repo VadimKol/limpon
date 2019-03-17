@@ -480,7 +480,7 @@ h1 {
     width: 48.489583333%;
     max-width: 931px;
     padding-top: 39.6%;
-    /* height: 760px */;
+    /* height: 760px ;*/
     background-image: url(../img/soft_feature/notebook_feature.png);
 }
 .software-box {
@@ -1050,6 +1050,26 @@ h1 {
 }
 
 /*Media*/
+@media screen and (min-width: 1920px) {
+    .header-screen,
+    .software-note,
+    .rhomb-bg,
+    .circle-bg {
+        padding-top: 0;
+    }
+    .header-screen {
+        height: 740px;
+    }
+    .software-note {
+        height: 760px;
+    }
+    .rhomb-bg {
+        height: 672px;
+    }
+    .circle-bg {
+        height: 663px;
+    }
+}
 @media screen and (max-width: 1300px) {
     /*page-app*/
     .page-app {
