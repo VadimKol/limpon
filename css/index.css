@@ -149,7 +149,6 @@ h1 {
     margin-bottom: 69px;
 }
 .page-testimonials .header40 {
-    max-width: 331px;
     margin: 0 0 60px;
 }
 .page-plans .header40 {
@@ -1197,6 +1196,34 @@ h1 {
     .grid-text, .grid-name {
         padding-left: 0;
     }
+    /*3 flex pages testimonials, team and prices*/
+    .page-testimonials {
+        padding: 120px 0 25px;
+    }
+    .box-comment {
+        flex-direction: column;
+        align-items: center;
+    }
+    .box-item {
+        flex-basis: auto;
+        padding: 34px 40px 13px;
+        margin-bottom: 20px;
+    }
+    .box-item-text, .box-item .person {
+        padding: 0;
+    }
+    .box-item .person {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 221px;
+    }
+    .blue-bg {
+        top: 45px;
+        height: 742px;
+    }
+    .page-testimonials .header40 {
+        text-align: center;
+    }
     /*page-form*/
     .page-form {
         padding: 35px 0 40px;
@@ -1334,6 +1361,11 @@ h1 {
         flex-basis: 100%;
     }
 }
+@media screen and (max-width: 831px) {
+    .blue-bg {
+        height: 814px;
+    }
+}
 @media screen and (max-width: 800px) {
     /*grid*/
     .grid {
@@ -1436,6 +1468,20 @@ h1 {
     .btns-overview a {
         display: inline-block;
     }
+    /*3 flex pages testimonials, team and prices*/
+    .page-testimonials .header40 {
+        max-width: 210px;
+        margin: 0 auto 60px;
+    }
+    .blue-bg {
+        height: 864px;
+    }
+}
+@media screen and (max-width: 509px) {
+    /*3 flex pages testimonials, team and prices*/
+    .blue-bg {
+        height: 936px;
+    }
 }
 @media screen and (max-width: 500px) {
     /*header*/
@@ -1504,5 +1550,15 @@ h1 {
     /*page-app*/
     .gplay {
         background-image: url(../img/video/google_play_ico_180.png)
+    }
+    /*3 flex pages testimonials, team and prices*/
+    .box-item {
+        padding: 34px 20px 13px;
+    }
+}
+@media screen and (max-width: 333px) {
+    /*3 flex pages testimonials, team and prices*/
+    .blue-bg {
+        height: 1008px;
     }
 }
