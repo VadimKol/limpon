@@ -765,6 +765,7 @@ h1 {
     left: 0;
     right: 0;
     margin: 0 auto;
+    width: 82.285714285%;
 }
 .team-member {
     font-size: 26px;
@@ -1096,10 +1097,6 @@ h1 {
         text-align: left;
     }
     /*page-soft-stats & page-soft-stats2*/
-    .page-soft_stats {
-        background-image: none;
-        background-color: #edf6ff;
-    }
     .page-soft_stats, .page-soft_stats2 {
         padding: 59px 0 69px;
     }
@@ -1121,15 +1118,14 @@ h1 {
         max-width: 506px;
     }
     .stats1, .stats2 {
-        position: relative;
         top: 30px;
-        left: 5.2%;
+        left: auto;
         right: auto;
     }
     .tools-ico {
         margin: 0 auto 8px;
     }
-    .page-soft_stats2 p {
+    .page-soft_stats p, .page-soft_stats2 p {
         color: rgb(64, 64, 64);
     }
     /*page-software*/
@@ -1194,7 +1190,7 @@ h1 {
     .grid-text, .grid-name {
         padding-left: 0;
     }
-    /*3 flex pages testimonials, team and prices*/
+    /*page-testimonials*/
     .page-testimonials {
         padding: 45px 0 25px;
     }
@@ -1206,6 +1202,7 @@ h1 {
         flex-basis: auto;
         padding: 34px 40px 13px;
         margin-bottom: 20px;
+        max-width: 500px;
     }
     .box-item-text, .box-item .person {
         padding: 0;
@@ -1220,6 +1217,25 @@ h1 {
     }
     .page-testimonials .header40 {
         text-align: center;
+    }
+    /*page-team*/
+    .page-team {
+        padding: 57px 0 60px;
+        background-image: url(../img/team/team_bg_light.png), url(../img/team/team_bg.png);
+        background-position: center top, center 326px;
+        background-size: cover;
+    }
+    .box-team {
+        flex-direction: column;
+        align-items: center;
+    }
+    .box-team-item {
+        width: 350px;
+        flex-basis: auto;
+        margin-bottom: 106px;
+    }
+    .box-team-item:last-child {
+        margin-bottom: 0;
     }
     /*page-form*/
     .page-form {
@@ -1354,6 +1370,22 @@ h1 {
     .page-header .nav {
         flex-basis: 100%;
     }
+    /*page-plans*/
+    .page-plans {
+        padding: 60px 0;
+    }
+    .plans {
+        flex-direction: column;
+        align-items: center;
+    }
+    .plans-item {
+        width: 520px;
+        flex-basis: auto;
+        margin-bottom: 20px;
+    }
+    .page-plans .header40 {
+        margin-bottom: 55px;
+    }
 }
 @media screen and (max-width: 800px) {
     /*grid*/
@@ -1373,6 +1405,7 @@ h1 {
                              ". g ."
                              "h h h";
         grid-template-columns: 1fr 450px 1fr;
+        gap: 30px normal;
     }
     /*email-subscribe*/
     .subscribe p br {
@@ -1403,7 +1436,7 @@ h1 {
         display: none;
     }
     /*page-soft-stats2*/
-    .page-soft_stats2 p {
+    .page-soft_stats p, .page-soft_stats2 p {
         color: #7581a1;
     }
     /*footer*/
@@ -1425,6 +1458,7 @@ h1 {
     }
 }
 @media screen and (max-width: 649px) {
+    /*header*/
     .page-header .nav {
         text-align: center;
     }
@@ -1437,6 +1471,13 @@ h1 {
         flex-basis: 100%;
         margin-top: 22px;
         margin-bottom: 0;
+    }
+    /*page-testimonials*/
+    .box-comment {
+        align-items: stretch;
+    }
+    .box-item {
+        max-width: none;
     }
 }
 @media screen and (max-width: 590px) {
@@ -1457,10 +1498,15 @@ h1 {
     .btns-overview a {
         display: inline-block;
     }
-    /*3 flex pages testimonials, team and prices*/
+    /*page-testimonials*/
     .page-testimonials .header40 {
         max-width: 210px;
         margin: 0 auto 60px;
+    }
+}
+@media screen and (max-width: 570px) {
+    .plans-item {
+        width: 100%;
     }
 }
 @media screen and (max-width: 500px) {
@@ -1515,6 +1561,15 @@ h1 {
     .Screen2 {
         display: none;
     }
+    /*page-team*/
+    .box-team-item {
+        width: 270px;
+        padding: 167px 0 39px;
+    }
+    .page-team .header40 {
+        margin-bottom: 97px;
+    }
+    
 }
 @media screen and (max-width: 461px) {
     /*header*/
@@ -1531,7 +1586,7 @@ h1 {
     .gplay {
         background-image: url(../img/video/google_play_ico_180.png)
     }
-    /*3 flex pages testimonials, team and prices*/
+    /*page-testimonials*/
     .box-item {
         padding: 34px 20px 13px;
     }
