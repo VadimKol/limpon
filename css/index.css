@@ -654,6 +654,7 @@ h1 {
 /*page-testimonials*/
 .page-testimonials .wrapper {
     position: relative;
+    top: 49px;
 }
 .box-comment {
     display: flex;
@@ -1010,16 +1011,13 @@ h1 {
     background-color: #edf6ff;
 }
 .page-testimonials {
-    position: relative;
-    padding: 195px 0 55px;
+    padding: 120px 0 104px;
 }
 .blue-bg {
-    position: absolute;
-    top: 120px;
     background-color: #1085e4;
     border-top-right-radius: 400px;
     width: calc(1110px + (100% - 1110px) * 0.75);
-    height: 400px;
+    padding-top: 26px;
 }
 .page-plans {
     padding: 60px 0 120px;
@@ -1198,7 +1196,7 @@ h1 {
     }
     /*3 flex pages testimonials, team and prices*/
     .page-testimonials {
-        padding: 120px 0 25px;
+        padding: 45px 0 25px;
     }
     .box-comment {
         flex-direction: column;
@@ -1218,8 +1216,7 @@ h1 {
         max-width: 221px;
     }
     .blue-bg {
-        top: 45px;
-        height: 742px;
+        width: 100%;
     }
     .page-testimonials .header40 {
         text-align: center;
@@ -1268,9 +1265,6 @@ h1 {
     }
     .soft-desc-exp {
         padding-right: 0;
-    }
-    .blue-bg {
-        width: 100%;
     }
 }
 @media screen and (max-width: 1024px) {
@@ -1359,11 +1353,6 @@ h1 {
     }
     .page-header .nav {
         flex-basis: 100%;
-    }
-}
-@media screen and (max-width: 831px) {
-    .blue-bg {
-        height: 814px;
     }
 }
 @media screen and (max-width: 800px) {
@@ -1473,15 +1462,6 @@ h1 {
         max-width: 210px;
         margin: 0 auto 60px;
     }
-    .blue-bg {
-        height: 864px;
-    }
-}
-@media screen and (max-width: 509px) {
-    /*3 flex pages testimonials, team and prices*/
-    .blue-bg {
-        height: 936px;
-    }
 }
 @media screen and (max-width: 500px) {
     /*header*/
@@ -1554,11 +1534,5 @@ h1 {
     /*3 flex pages testimonials, team and prices*/
     .box-item {
         padding: 34px 20px 13px;
-    }
-}
-@media screen and (max-width: 333px) {
-    /*3 flex pages testimonials, team and prices*/
-    .blue-bg {
-        height: 1008px;
     }
 }
