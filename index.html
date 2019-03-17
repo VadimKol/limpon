@@ -341,7 +341,29 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function(){
-            $(".btn-more").show().siblings(".fab").hide(); //no js
+            //no js
+            $(".btn-more").show().siblings(".fab").hide();
+            if (window.matchMedia('screen and (max-width: 1130px)').matches) {
+                $(".page-header").find(".nav").hide();
+                $(".btn-humburger").show().css("display", "block");
+            }
+            if (window.matchMedia('screen and (max-width: 915px)').matches) {
+                $(".logo").css("margin","0");
+            }
+            $(window).resize(function() { //when resizing browser
+                if (window.matchMedia('screen and (max-width: 1130px)').matches) {
+                    $(".page-header").find(".nav").hide();
+                    $(".btn-humburger").show().css("display", "block");
+                }
+                else {
+                    $(".page-header").find(".nav").show();
+                    $(".btn-humburger").hide();
+                }
+                if (window.matchMedia('screen and (max-width: 915px)').matches) {
+                    $(".logo").css("margin","0");
+                }
+            });
+            //-------end no js-------
             $(".btn-more").click(function(){
                 $(this).hide().siblings(".fab").show();
             });
