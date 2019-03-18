@@ -1,3 +1,14 @@
-_::-moz-svg-foreign-content, :root .logo { 
+_::-moz-svg-foreign-content, :root .logo {
     width: 181px;
+}
+_::-moz-svg-foreign-content, :root .sponsors-list li {
+    width: 25%;
+}
+_::-moz-svg-foreign-content, :root .subscribe-email {
+    width: 63.056379821%;
+}
+@media screen and (max-width: 500px) {
+    _::-moz-svg-foreign-content, :root .subscribe-email {
+        width: 82.339955849%;
+    }
 }
