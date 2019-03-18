@@ -585,6 +585,7 @@ h1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     font-size: 12px;
@@ -1223,6 +1224,7 @@ h1 {
     }
     /*footer*/
     .footer .flex-app {
+        -webkit-box-pack: justify;
         -ms-flex-pack: distribute;
             justify-content: space-around;
     }
