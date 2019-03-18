@@ -6,6 +6,34 @@ _::-moz-svg-foreign-content, :root .sponsors-list li {
 }
 _::-moz-svg-foreign-content, :root .subscribe-email {
     width: 63.056379821%;
+    height: 16px;
+}
+_::-moz-svg-foreign-content, :root .stats1 {
+    display: none;
+}
+_::-moz-svg-foreign-content, :root .stats2 {
+    display: none;
+}
+_::-moz-svg-foreign-content, :root .plans-item {
+    width: 31.5599%;
+}
+_::-moz-svg-foreign-content, :root .contact-form-item {
+    width: 80.933852140%;
+}
+@media screen and (max-width: 1300px) {
+    _::-moz-svg-foreign-content, :root .app-video {
+        right: 35.11%;
+    }
+}
+@media screen and (max-width: 915px) {
+    _::-moz-svg-foreign-content, :root .plans-item {
+        width: 520px;
+    }
+}
+@media screen and (max-width: 570px) {
+    _::-moz-svg-foreign-content, :root .plans-item {
+        width: 100%;
+    }
 }
 @media screen and (max-width: 500px) {
     _::-moz-svg-foreign-content, :root .subscribe-email {
