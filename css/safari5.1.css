@@ -20,6 +20,13 @@ _::-moz-svg-foreign-content, :root .plans-item {
 _::-moz-svg-foreign-content, :root .contact-form-item {
     width: 80.933852140%;
 }
+_::-moz-svg-foreign-content, :root .contact-form {
+    width: 514px;
+}
+_::-moz-svg-foreign-content, :root .grid-item {
+    width: 43.9453125%;
+    margin: 0 auto 20px;
+}
 @media screen and (max-width: 1300px) {
     _::-moz-svg-foreign-content, :root .app-video {
         right: 35.11%;
