@@ -108,12 +108,12 @@ h1 {
 .header40 {
     font-size: 40px;
     line-height: 1.25;
-    letter-spacing: -1.2px;
+    letter-spacing: -0.03em;
 }
 .header50 {
     font-size: 50px;
     line-height: 1.2;
-    letter-spacing: -1.5px;
+    letter-spacing: -0.03em;
     white-space: pre-wrap;
 }
 .page-stats .header50,
@@ -267,8 +267,7 @@ h1 {
 .nav-mobile li {
     margin-bottom: 21px;
 }
-.nav-mobile li:first-child,
-.nav-mobile li:last-child {
+.nav-mobile li:first-child {
     margin-bottom: 0;
 }
 .nav-mobile li:last-child {
@@ -1374,6 +1373,7 @@ h1 {
         white-space: normal;
         max-width: 525px;
         margin: 0 auto 26px;
+        text-align: center;
     }
     .page-software .tools-ico {
         margin: 0 auto 8px;
@@ -1572,6 +1572,9 @@ h1 {
         color: #7581a1;
     }
     /*footer*/
+    .footer {
+        padding: 18px 0 7px;
+    }
     .footer .flex-app {
         -ms-flex-wrap: wrap-reverse;
             flex-wrap: wrap-reverse;
@@ -1659,8 +1662,19 @@ h1 {
         -ms-flex-preferred-size: 100%;
             flex-basis: 100%;
     }
+    .first-sponsor {
+        background-size: 138px 40px;
+        margin-bottom: 0;
+    }
+    .second-sponsor {
+        background-size: 140px 48px;
+        margin-bottom: 0;
+    }
     .third-sponsor {
-        margin-bottom: 15px;
+        background-size: 140px 33px;
+    }
+    .fourth-sponsor {
+        background-size: 140px 48px;
     }
     .page-company {
         padding: 29px 0 32px;
@@ -1686,14 +1700,16 @@ h1 {
         margin-right: 56px;
     }
     /*page-app*/
+    .page-subscribe .header50,
+    .page-stats .header50,
     .page-app .header50,
-    .page-soft_stats .header50,
-    .page-soft_stats2 .header50,
+    .page-testimonials .header40,
     .page-form .header50 {
-        font-size: 40px;
-        line-height: 1.25;
-        letter-spacing: -1.2px;
         margin-bottom: 27px;
+    }
+    .header40, .header50 {
+        font-size: 32px;
+        line-height: 1.3125;
     }
     /*page-details*/
     .Screen1 {
@@ -1710,7 +1726,6 @@ h1 {
     .page-team .header40 {
         margin-bottom: 97px;
     }
-    
 }
 @media screen and (max-width: 461px) {
     /*header*/
@@ -1718,8 +1733,8 @@ h1 {
         margin-bottom: 20px;
     }
     .btns-overview a + a {
-        margin-left: 8px;
-        margin-right: 8px;
+        margin-left: 0;
+        padding: 19px 61px 19px 62px;
     }
 }
 @media screen and (max-width: 415px) {
