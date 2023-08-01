@@ -559,22 +559,15 @@ h1 {
     display: none;
 }
 .soft-desc::-webkit-scrollbar {
-    width: 4px;
+    width: 17px;
 }
 .soft-desc::-webkit-scrollbar-track {
-    border-radius: 2px;
+    border-radius: 8.5px;
     background-color: #f3f6ff;
 }
 .soft-desc::-webkit-scrollbar-thumb {
-    border-radius: 2px;
-    background-color: #1085e4;
-}
-.soft-desc:hover::-webkit-scrollbar {
-    width: 17px;
-}
-.soft-desc:hover::-webkit-scrollbar-track,
-.soft-desc:hover::-webkit-scrollbar-thumb  {
     border-radius: 8.5px;
+    background-color: #1085e4;
 }
 /*dashboard-stats*/
 .list-stats {
@@ -1028,11 +1021,13 @@ h1 {
     position: relative;
     padding: 113px 0 179px;
     background-image: url(../img/soft_feature/soft_background.png);
+    z-index: 0;
 }
 .page-stats {
     position: relative;
     padding: 117px 0 114px;
     background-color: #edf6ff;
+    z-index: 0;
 }
 .rhomb-bg, .circle-bg, .software-note, .header-screen {
     background-repeat: no-repeat;
@@ -1048,6 +1043,7 @@ h1 {
     /* height: 672px; */
     padding-top: 35%;
     background-image: url(../img/rhomb.png);
+    z-index: -1;
 }
 .circle-bg {
     position: absolute;
@@ -1058,6 +1054,7 @@ h1 {
     /* height: 663px; */
     padding-top: 34.55%;
     background-image: url(../img/circle.png);
+    z-index: -1;
 }
 .page-app {
     position: relative;
@@ -1075,6 +1072,7 @@ h1 {
     right: 0;
     margin: 0;
     text-align: center;
+    z-index: -1;
 }
 .page-soft_stats {
     padding: 119px 0 139px;
@@ -1368,6 +1366,7 @@ h1 {
     .page-software {
         padding: 56px 0 89px;
         background-image: none;
+        z-index: 1;
     }
     .software-box .header50 {
         white-space: normal;
@@ -1434,16 +1433,6 @@ h1 {
     .subscribe-form {
         width: 674px;
         margin: 0 auto;
-    }
-    /*page-software*/
-    .soft-desc::-webkit-scrollbar {
-        width: 17px;
-    }
-    .soft-desc::-webkit-scrollbar-track {
-        border-radius: 8.5px;
-    }
-    .soft-desc::-webkit-scrollbar-thumb {
-        border-radius: 8.5px;
     }
     /*page-stats*/
     .rhomb-bg {
